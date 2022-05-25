@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*outline: 1px solid red;*/
+}
+body{
+    font-family: 'Mulish', sans-serif;
+    font-style: normal;
+    background: #FFFFFF;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.chair{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    letter-spacing: 0.008em;
+    text-transform: uppercase;
+    color: rgba(117, 117, 117, 0.71);
+    margin-bottom: 4px;
+}
+.title2{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45px;
+    color: #555555;
+    text-align: center;
+    margin-bottom: 45px;
+}
+.title3{
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 28px;
+    color: #555555;
+}
+.title5{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0.005em;
+    color: #555555;
+    margin-bottom: 13px;
+}
+.green.title3{
+    color: #7AC751;
+    font-size: 20px;
+    line-height: 26px;
+}
+.price{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: 0.005em;
+    color: #7AC751;
+}
+.last__price{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: 0.005em;
+    text-decoration-line: line-through;
+    color: #CCCCCC;
+}
+.container{
+    max-width: 1210px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.offer__wrapper{
+    margin-top: 50px;
+    display: grid;
+    gap: 17px;
+    grid-template-areas:
+    "furniture bookcase"
+    "furniture sofa";
+}
+.furniture{
+    padding: 49px 337px 361px 31px;
+    background-image: url(./image/white.png);
+    grid-area: furniture;
+    display: grid;
+    gap: 10px;
+}
+.furniture p{
+    margin-top: 3px;
+}
+.title3.title__bigger{
+    font-weight: 700;
+    line-height: 26px;
+}
+.bookcase{
+    padding: 52px 250px 98px 24px;
+    background-image: url(./image/boxes.png);
+    grid-area: bookcase;
+    display: grid;
+    gap: 8px;
+}
+.bookcase p{
+    margin-top: 1px;
+}
+.sofa{
+    display: grid;
+    gap: 8px;
+    padding: 37px 212px 114px 24px;
+    background-image: url(./image/sofa.png);
+    grid-area: sofa;
+}
+.products__wrapper{
+     margin-top: 120px;
+     display: grid;
+}
+.title2{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45px;
+    color: #555555;
+    text-align: center;
+    margin-bottom: 45px;
+}
+.products__navigation{
+    display: inline-flex;
+    justify-content: center;
+    gap: 70px;
+    margin-bottom: 73px;
+}
+.products__navigation__link{
+    display: inline-block;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    color: #C2C2C2;
+}
+.products__navigation__link:active{
+    color: #7AC751;
+}
+.products__list{
+    display: grid;
+    /*grid-auto-flow: row;*/
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 45px;
+    /*gap: 45px;*/
+}
+.products__block{
+    max-width: 270px;
+    position: relative;
+}
+.products__corner__img{
+    position: absolute;
+    margin-top: 0;
+    margin-right: 0;
+}
+.products__img{
+    margin-bottom: 15px;
+}
+.products__block__down{
+    display: inline-flex;
+    gap: 95px;
+}
+.products__price{
+    display: inline-flex;
+    gap: 7px;
+}
+.stars img:hover{
+    color: green;
+}
+.products__pages{
+    display: inline-flex;
+    gap: 14px;
+    justify-content: center;
+    margin-top: 58px;
+}
+.special__wrapper{
+    display: grid;
+    grid-template-areas:
+            "title title"
+            "wall pinkflower";
+    grid-column-gap: 30px;
+    margin-top: 99px;
+    margin-bottom: 50px;    /*этот маржин просто чтобы
+                               комфортно смотреть низ*/
+}
+.special__wrapper h2{
+    grid-area: title;
+}
+.special__wall{
+    grid-area: wall;
+    position: relative;
+    padding: 28px 319px 29px 24px;
+    max-width: 570px;
+    background-image: url(./image/whitewall.png);
+}
+.special__corner__img{
+    position: absolute;
+    transform: translate(482px,-28px);
+}
+.special__wall h3{
+    margin-bottom: 11px;
+}
+.special__text{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #757575;
+    margin-bottom: 27px;
+}
+.special__button{
+    display: inline-block;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    min-width: 91px;
+    align-items: center;
+    color: #FFFFFF;
+    background: #7AC751;
+    border-radius: 2px;
+    padding: 7px 10px 6px 10px;
+}
+.special__block__down{
+    display: flex;
+    align-items: center;
+    gap: 19px;
+    margin-bottom: 29px;
+}
+.special__price{
+    display: inline-flex;
+    gap: 7px;
+}
+.special__time{
+    display: flex;
+    gap: 18px;
+}
+.special__modern{
+    padding: 33px 321px 29px 22px;
+    background-image: url(./image/pinkwithflower.png);
+}
+.special__modern h3{
+    margin-bottom: 11px;
+}
+.special__block__down.modern{
+    margin-bottom: 24px;
+}
+
