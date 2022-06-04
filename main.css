@@ -183,10 +183,12 @@ a{
     display: inline-flex;
     gap: 7px;
 }
-.products__img.relative__chair{
+.products__img.relative__chair:hover{
     position: relative;
 }
+
 .extra__button{
+    /*display: none;*/
     position: absolute;
     margin-left: 224px;
     transform: translate(0,-110%);
